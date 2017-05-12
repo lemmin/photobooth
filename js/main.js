@@ -10,6 +10,7 @@ function initApp () {
 	function (err) {
 		alert('No camera');
 	});
+	window.addEventListener('resize', vc.realign);
 
 	// Init interface.
 	var overlay = document.getElementById('overlay');

@@ -14,7 +14,7 @@ function VideoCamera (wrapper) {
 	}
 
 	// Mimic background-size:cover.
-	this.realign = function () {
+	this.realign = () => {
 		var resolution = this.video.videoWidth/this.video.videoHeight;
 		if (window.innerWidth/resolution > window.innerHeight) {
 			var w = window.innerWidth;
